@@ -1,0 +1,25 @@
+.TodoList {
+  width: 100%;
+}
+.Actions {
+  text-align: right;
+}
+tr {
+  border-radius: 3px;
+  padding: 2.5px;
+}
+table {
+  width: 100%;
+  color: #909abc;
+  font-weight: bold;
+  background-color: white;
+}
+h3 {
+  text-align: center;
+}
+/* tbody tr:nth-child(even) {
+  background-color: darkorchid;
+}
+tbody tr:nth-child(odd) {
+  background-color: lightskyblue;
+} */

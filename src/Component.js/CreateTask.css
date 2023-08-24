@@ -1,0 +1,29 @@
+button.add {
+  background-color: #af7eeb;
+  border-radius: 50%;
+  color: antiquewhite;
+  cursor: pointer;
+  border: none;
+  margin-left: 4px;
+  text-align: center;
+}
+.NewTask {
+  background-color: #af7eeb;
+  color: antiquewhite;
+  width: 140px;
+  padding: 0 0 0 20px;
+  border-radius: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+form {
+  margin-left: 25%;
+}
+.TextBox {
+  height: 25px;
+  width: 180px;
+  font-size: large;
+}
+.TextBox:focus {
+  border-color: orange;
+}

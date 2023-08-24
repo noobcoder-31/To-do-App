@@ -1,0 +1,44 @@
+.completed {
+  text-decoration: line-through;
+}
+.not-completed {
+  text-decoration: none;
+}
+.task {
+  font-size: large;
+  cursor: pointer;
+}
+.Actions {
+  text-align: right;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button.edit {
+  color: black;
+}
+button.save {
+  color: black;
+}
+button.delete {
+  color: black;
+}
+button.back {
+  color: antiquewhite;
+}
+input {
+  font-size: large;
+}
