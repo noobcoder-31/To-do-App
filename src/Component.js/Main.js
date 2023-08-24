@@ -19,21 +19,36 @@ export default class Main extends Component {
     let newTask = { taskname: tname.trim(), isCompleted: false };
     let allTasks = [...this.state.tasks, newTask];
     this.setState({ tasks: allTasks });
+    localStorage.clear();
+    localStorage.setItem("tasks", JSON.stringify(allTasks));
   }
   deleteTask(idx) {
     let arr = this.state.tasks.filter((t, index) => index !== idx);
     this.setState({ tasks: arr });
+    localStorage.clear();
+    localStorage.setItem("tasks", JSON.stringify(arr));
   }
   editTask(index, value) {
     let arr = [...this.state.tasks];
     arr[index].taskname = value;
     this.setState({ tasks: arr });
+    localStorage.clear();
+    localStorage.setItem("tasks", JSON.stringify(arr));
   }
   toggleTask(idx) {
     let arr = [...this.state.tasks];
     arr[idx].isCompleted = !arr[idx].isCompleted;
     this.setState({ tasks: arr });
+    localStorage.clear();
+    localStorage.setItem("tasks", JSON.stringify(arr));
   }
+  tasksget() {
+    let arr = JSON.parse(localStorage.getItem("tasks"));
+    if (arr) {
+      this.setState({ tasks: arr });
+    }
+  }
+
   render() {
     return (
       <div className="Main">
@@ -51,5 +66,8 @@ export default class Main extends Component {
         </div>
       </div>
     );
+  }
+  componentDidMount() {
+    this.tasksget();
   }
 }
