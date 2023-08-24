@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faFloppyDisk } from "@fortawesome/free-solid-svg-icons";
-import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./TaskItem.css";
 export default class TaskItem extends Component {
   constructor(props) {
